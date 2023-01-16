@@ -5,7 +5,7 @@ object Deps {
     const val activityCompose = "androidx.activity:activity-compose:$activityComposeVersion"
 
     private const val composeBOMVersion = "2023.01.00"
-    private const val composeCompilerVersion = "1.3.2"
+    const val composeCompilerVersion = "1.3.2"
     const val composeBOM = "androidx.compose:compose-bom:$composeBOMVersion"
     const val composeUi = "androidx.compose.ui:ui"
     const val composeUiTooling = "androidx.compose.ui:ui-tooling"
@@ -41,7 +41,7 @@ object Deps {
     const val ktorIOS = "io.ktor:ktor-client-ios:$ktorVersion"
 
     // GRADLE PLUGINS
-    const val kotlinVersion = "1.7.21"
+    const val kotlinVersion = "1.7.20"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
     private const val gradleVersion = "7.2.2"
