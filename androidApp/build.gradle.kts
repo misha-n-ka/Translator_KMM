@@ -20,7 +20,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = Deps.composeCompilerVersion
+        kotlinCompilerExtensionVersion = Deps.composeVersion
     }
     packagingOptions {
         resources {
@@ -36,7 +36,6 @@ android {
 
 dependencies {
     implementation(project(":shared"))
-    implementation(platform(Deps.composeBOM))
     implementation(Deps.composeUi)
     implementation(Deps.composeUiTooling)
     implementation(Deps.composeUiToolingPreview)
