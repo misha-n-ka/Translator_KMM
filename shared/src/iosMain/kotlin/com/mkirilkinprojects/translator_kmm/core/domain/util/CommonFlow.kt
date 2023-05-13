@@ -5,7 +5,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 
-actual class CommonFlow<T> actual constructor(
+actual open class CommonFlow<T> actual constructor(
     private val flow: Flow<T>
 ) : Flow<T> by flow {
 
@@ -19,6 +19,4 @@ actual class CommonFlow<T> actual constructor(
         }
         return DisposableHandle { job.cancel() }
     }
-
-
 }
